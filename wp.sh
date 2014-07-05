@@ -95,9 +95,14 @@ else
 	echo -e "Cleaning up install files..."
 	rm latest.tar.gz
 	rm index.html
-	#remove bash script
-	rm wp.sh
 	echo -e $success
+
+	echo -e "Delete Files from wordpress-install repository? ${yellow}README.md, LICENSE, wp.sh{NC} (y/n)"
+	read -e deleteRepo
+	if [ "deleteRepo" == y ]; then
+		rm README.md LICENSE wp.sh
+	fi
+
 	if [ $dbFail ]; then
 		echo -e "${yellow}WARN: Wordpress has been installed but you must create the database manually ${NC}"
 	fi
