@@ -16,15 +16,15 @@ Wordpress-Installer
 * Creates MySQL Database
 
 ####How to use the WordPress Install Script
-1. Clone down this repo into the root directory of your WordPress site
+1) Clone down this repo into the root directory of your WordPress site
 ```Shell
 git clone https://github.com/devender2/wordpress-installer.git ./
 ```
-2. Make the script executable
+2) Make the script executable
 ```Shell
 chmod 755 wp.sh
 ```
-3. Run the script and answer the questions in your terminal
+3) Run the script and answer the questions in your terminal
 ```Shell
 ./wp.sh
 ```
